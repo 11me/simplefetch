@@ -1,7 +1,9 @@
 # simplefetch
 It is a simple golang http client.
 
-Examples:
+## Exmaples
+
+1) Simple GET
 ```golang
 import fetch "github.com/11me/simplefetch"
 
@@ -17,6 +19,7 @@ func main() {
 }
 ```
 
+2) Simple POST
 ```golang
 import fetch "github.com/11me/simplefetch"
 
