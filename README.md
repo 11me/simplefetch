@@ -11,6 +11,10 @@ func main() {
 
   res, err := fetch.Get(fetch.Options{
     URL: "http://example.com",
+    Params: fetch.Params{
+      "id": "1",
+      "name": "lime",
+    },
   })
   if err != nil {
     // handle error
