@@ -40,6 +40,7 @@ func TestFetch(t *testing.T) {
 			w.WriteHeader(200)
 
 			data, _ := io.ReadAll(r.Body)
+			defer r.Body.Close()
 			json.Unmarshal(data, &dataMap)
 
 			if dataMap["id"] != float64(1) {
